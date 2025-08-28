@@ -1,0 +1,120 @@
+body{
+    margin:0;
+    height: 100vh;
+    background: #eee;
+}
+
+thead{
+    margin-bottom: 10px;
+}
+
+table{
+    border-collapse: collapse;
+    width: 80%;
+}
+th{
+    background: #d0cece83;
+    border: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    font-weight: normal;
+    text-align: left;
+}
+td{
+    border: 1px solid black;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+td:hover{
+    background-color: #d0cece83;
+}
+
+.addAlbumModal{
+    background-color: rgba(26, 27, 27, 0.172);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.updateAlbumModal{
+    background-color: rgba(26, 27, 27, 0.172);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.modal{
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 0px 5px black;
+        padding: 20px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+}
+
+.modalButtons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.modalButtons button{
+    border-radius: 5px;
+    filter: drop-shadow(0px 0px 1px black);
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.modalButtons button:hover{
+    transform: scale(0.9);
+}
+
+.modalInputs{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type='text']{
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.addBtn{
+    margin-top: 5px;
+    padding: 10px;
+    font-size: large;
+    border-radius: 5px;
+    filter: drop-shadow(0px 0px 1px black);
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: lightblue;
+}
+
+.addBtn:hover{
+    transform: scale(0.9);
+}
+
+button{
+    cursor: pointer;
+    background-color: lightblue;
+    border-radius: 5px;
+    filter: drop-shadow(0px 0px 1px black);
+}
+button:hover{
+    background-color: deepskyblue;
+}

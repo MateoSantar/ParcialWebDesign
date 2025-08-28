@@ -1,2 +1,2 @@
 # ParcialWebDesign
-Parcial de diseño web del 28/08
+Parcial de Diseño web del 28/08

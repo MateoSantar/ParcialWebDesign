@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Hecho por Santarsiero Mateo -->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parcial Diseño Web Santarsiero Mateo</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="updateAlbumModal">
+        <p id="updateAlbumTempId" style="display: none;"></p>
+        <div class="modal">
+            <div class="modalInputs">
+                <div class="modalInput">
+                    <label for="albumID">ID del Album</label>
+                    <input type="text" name="albumID" id="updateAlbumId"/>
+                </div>
+                <div class="modalInput">
+                    <label for="albumTitle">Titulo</label>
+                    <input type="text" name="albumTitle" id="updateTitle"/>
+                </div>
+                <div class="modalInput">
+                    <label for="albumURL">URL</label>
+                    <input type="text" name="albumURL" id="updateURL"/>
+                </div>
+                <div class="modalInput">
+                    <label for="albumThumbnailURL">URL de miniatura</label>
+                    <input type="text" name="albumThumbnailURL" id="updateThumbnailURL"/>
+                </div>
+            </div>
+            <div class="modalButtons">
+                <button onclick="document.querySelector('.updateAlbumModal').style.display = 'none'">Cancelar</button>
+                <button onclick="updateObject()">Aplicar</button>
+            </div>
+        </div>
+    </div>
+    <div class="addAlbumModal">
+        <div class="modal">
+            <div class="modalInputs">
+                <div class="modalInput">
+                    <label for="albumID">ID del Album</label>
+                    <input type="text" name="albumID" id="addAlbumId" />
+                </div>
+                <div class="modalInput">
+                    <label for="albumTitle">Titulo</label>
+                    <input type="text" name="albumTitle" id="addAlbumTitle" />
+                </div>
+                <div class="modalInput">
+                    <label for="albumURL">URL</label>
+                    <input type="text" name="albumURL" id="addAlbumURL" />
+                </div>
+                <div class="modalInput">
+                    <label for="albumThumbnailURL">URL de miniatura</label>
+                    <input type="text" name="albumThumbnailURL" id="addAlbumThumbnailURL" />
+                </div>
+            </div>
+            <div class="modalButtons">
+                <button onclick="document.querySelector('.addAlbumModal').style.display = 'none'">Cancelar</button>
+                <button onclick="addObject()">Aplicar</button>
+            </div>
+        </div>
+    </div>
+
+    <table style="overflow-x: hidden">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>ID de Album</th>
+                <th>Titulo</th>
+                <th>URL</th>
+                <th>Url de Miniatura</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <button onclick="showAddModal()" class="addBtn">Añadir cancion</button>
+    <script src="script.js"></script>
+</body>
+
+</html>
